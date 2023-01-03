@@ -1,0 +1,18 @@
+<div *ngIf="account">
+  <h2>Account Details</h2>
+  <div><span>id: </span>{{account.id}}</div>
+  <div>
+    <label>Username: {{account.username}} </label>
+  </div>
+  <div>
+    <label>FirstName: {{account.firstName}}</label>
+  </div>
+  <div>
+    <label>LastName: {{account.lastName}}</label>
+  </div>
+  <div>
+    <label>Status: {{account.status}}</label>
+    <button (click)="changeStatus()">Lock/UnLock</button>
+  </div>
+  <button (click)="goBack()">Go back</button>
+</div>
